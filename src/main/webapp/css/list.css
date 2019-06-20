@@ -1,0 +1,63 @@
+body,html{
+	margin: 0px;
+	padding: 0px;
+}
+.library{
+	height:250px
+}
+.library_messages{
+	width: 185px;
+	height: 250px;
+	float:left;
+	border: 1px black solid;	
+}
+.library_messages span{
+    display:block;
+    overflow:hidden;
+}
+.library_messages .book a{
+	display: block;
+	color: red;
+}
+.page_messages .page_num{
+	float:left;
+	width: 450px;
+	height: 40px;
+}
+.page_messages .page_num span{
+	line-height: 40px;
+}
+.page_messages .page_nav{
+	float:left;
+	height: 40px;
+}
+.page_messages .page_nav a{
+	display: inline-block;
+	width:50px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color:black;
+	opacity: 1;
+	background-color:yellow;
+	margin-left:2px;
+	
+}
+.page_messages .page_nav a:hover{
+	opacity: 0.5;
+}
+.shopping_carts{
+	width:100px;
+	height:30px;
+	text-align:center;
+	margin-bottom: 50px;
+
+}
+.shopping_carts a{
+	width:200px;
+	display:inline-block;
+	line-height:20px;
+	background-color:red;
+	margin-bottom:15px;
+}

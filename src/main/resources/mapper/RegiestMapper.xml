@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.m520it.library.dao.Regiestmapper">
+	<insert id="insert" parameterType="com.m520it.library.bean.Regiest">
+	   insert into regiest(name,password,email,phone,adress) 
+	               values(#{username},#{password},#{email},#{phone},#{adress})
+	</insert>
+	
+	<update id="update" parameterType="com.m520it.library.bean.Regiest">
+		update regiest 
+		       set name=#{username},
+		           password=#{password},
+		           email=#{email},
+		           phone=#{phone},
+		           adress=#{adress} 
+		           where id=#{id}
+	</update>
+</mapper>
